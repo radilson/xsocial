@@ -1,0 +1,207 @@
+/*
+
+
+
+*/
+
+.timeline-box {
+  .timeline-filter {
+    .btn {
+      border: 0;
+      margin-top: -6px;
+      margin-bottom: -6px;
+      margin-right: -6px;
+      font-family: 'latobold';
+      .fa {
+        margin-left: 5px;
+        color: #B3B8BA;
+      }
+    }
+  }
+}
+
+.timeline-new-content {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ECECEC;
+  .btn {
+    border-radius: 30px;
+    border: 0;
+    font-weight: bold;
+  }
+}
+
+.timeline-wrapper {
+  .timeline-loading {
+    padding: 10px;
+    text-align: center;
+    .fa {
+      color: #BFCAD2;
+    }
+  }
+
+  .post-box {
+    padding: 15px 15px 15px 110px;
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+    &.suggestion-box {
+      background: #F5F7F9;
+      box-shadow: 0 0 0 1px #DEE2E5;
+      border: 0;
+      .label-suggestion {
+        background: #C8CED5;
+        border-radius: 100px;
+        font-size: 10px;
+        margin-left: 5px;
+      }
+      .suggestion-content {
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        .suggestion-title {
+          font-size: 16px;
+          font-family: 'latobold';
+          margin: 0 0 3px;
+        }
+      }
+      .post-thumb {
+        .post-type {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          font-size: 26px;
+          left: 0;
+          top: 0;
+          border-radius: 100px;
+          box-shadow: 0 0 0 15px #fff inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+    }
+    .post-thumb {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      .post-img {
+        width: 80px;
+        height: 80px;
+        background-color: #E9EFF1;
+        border-radius: 100px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .post-type {
+        color: #fff;
+        font-size: 12px;
+        background: #444;
+        width: 24px;
+        height: 24px;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 24px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0 0 0 2px #fff;
+        &.type-news {
+
+        }
+      }
+    }
+    .post-header {
+      margin: 0 0 10px;
+      padding-right: 20px;
+      position: relative;
+      .post-options {
+        position: absolute;
+        top: 0;
+        right: 0;
+        .btn {
+          background: none;
+          border: 0;
+          color: #8F99A9;
+          font-size: 22px;
+        }
+      }
+      .post-author {
+        font-family: 'latobold';
+      }
+      .post-origin {
+
+      }
+      .post-timestap {
+        display: block;
+        font-size: 12px;
+        color: #919191;
+      }
+    }
+    .post-content {
+      .post-desc {
+        font-size: 14px;
+      }
+      .post-img-wrapper {
+        margin: 10px;
+        .col-img {
+          padding: 0px;
+        }
+        .post-img {
+          margin: 4px;
+          overflow: hidden;
+          border-radius: 3px;
+          cursor: pointer;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: transparent;
+          }
+          &:hover:before {
+            background: rgba(0, 0, 0, 0.6);
+            -webkit-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-news {
+  .post-img-wrapper {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-wrapper {
+    .post-box {
+      padding: 10px 10px 10px 70px;
+      .post-thumb {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        .post-img {
+          width: 50px;
+          height: 50px;
+        }
+        .post-type {
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}

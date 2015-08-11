@@ -1,0 +1,386 @@
+/*
+ * Skin: Blue
+ * ----------
+ */
+
+@topbar-bg: #5C6774;
+@sidebar-bg: #3A4149;
+@main-color: #50A1FF;
+
+@fav-color-a: #2870C4;
+@fav-color-b: #674BF5;
+@fav-color-c: #35D087;
+@fav-color-d: #E48E12;
+@fav-color-e: #E3400F;
+@fav-color-f: #0FC0E3;
+
+/* Timeline */
+@type-news: #F26A1D;
+@type-image: #FF72D6;
+@type-broadcast: #EFEEEE;
+@type-workspace: #AD78E4;
+@type-forum: #7ED321;
+@type-drive: #4A90E2;
+
+.main-header .navbar {
+  background-color: @topbar-bg;
+}
+.main-header .navbar .nav > li > a {
+  color: #ffffff;
+}
+ .main-header .navbar .nav > li > a:hover,
+ .main-header .navbar .nav > li > a:active,
+ .main-header .navbar .nav > li > a:focus,
+ .main-header .navbar .nav .open > a,
+ .main-header .navbar .nav .open > a:hover,
+ .main-header .navbar .nav .open > a:focus {
+  background: rgba(0, 0, 0, 0.1);
+  color: #f6f6f6;
+}
+ .main-header .sidebar-toggle {
+  font-size: 20px;
+  color: rgba(0,0,0,0.15);
+}
+ .main-header .sidebar-toggle:hover {
+  color: rgba(0, 0, 0, 0.3);
+
+}
+ .main-header .sidebar-toggle {
+  color: rgba(0, 0, 0, 0.2);
+}
+ .main-header .sidebar-toggle:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+ .main-header .logo {
+  background-color: #367fa9;
+  color: #ffffff;
+  border-bottom: 0px solid transparent;
+}
+ .main-header .logo:hover {
+  background-color: #357ca5;
+}
+ .main-header li.user-header {
+  background-color: @topbar-bg;
+}
+ .content-header {
+  background: transparent;
+}
+ .wrapper,
+ .main-sidebar,
+ .left-side {
+  background-color: @sidebar-bg;
+}
+ .user-panel > .info,
+ .user-panel > .info > a {
+  color: #fff;
+}
+ .sidebar-menu > li.header {
+  color: #4b646f;
+  background: #1a2226;
+}
+ .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+  color: #A2ABBE;
+
+  .item-detailed i {
+   color: #788195;
+  }
+  .icon-thumb {
+   color: #798797;
+  }
+}
+
+.sidebar-menu > li:hover > a {
+ color: #fff;
+ cursor: pointer;
+ .icon-thumb {
+  color: #fff;
+ }
+ .label {
+  background: rgba(255, 0, 116, 0.81);
+ }
+}
+
+.sidebar-menu > li.active > a {
+ color: #fff;
+ .icon-thumb {
+  background: @main-color;
+  color: #fff;
+ }
+}
+ .sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background: #2c3b41;
+}
+ .sidebar a {
+  color: #b8c7ce;
+}
+ .sidebar a:hover {
+  text-decoration: none;
+}
+ .treeview-menu > li > a {
+  color: #8aa4af;
+}
+ .treeview-menu > li.active > a,
+ .treeview-menu > li > a:hover {
+  color: #ffffff;
+}
+ .sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #374850;
+  margin: 10px 10px;
+}
+ .sidebar-form input[type="text"],
+ .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #374850;
+  border: 1px solid transparent;
+  height: 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+ .sidebar-form input[type="text"] {
+  color: #666;
+  border-top-left-radius: 2px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 2px !important;
+}
+ .sidebar-form input[type="text"]:focus,
+ .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #666;
+}
+ .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+ .sidebar-form .btn {
+  color: #999;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
+  border-bottom-left-radius: 0 !important;
+}
+.layout-top-nav .main-header > .logo {
+  background-color: @topbar-bg;
+  color: #ffffff;
+  border-bottom: 0px solid transparent;
+}
+.layout-top-nav .main-header > .logo:hover {
+  background-color: #3b8ab8;
+}
+
+@media (max-width: 767px) {
+   .main-header .navbar .dropdown-menu li.divider {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+}
+
+.search-results-wrapper .search-list .list-group .list-group-item:hover {
+ background: @main-color;
+}
+
+.search-results-wrapper .search-list .list-group .list-group-item {
+ &.type-drive .search-item-img:before{
+  background-color: @type-drive;
+  content: '\f0a0'; /* fa-hdd */
+ }
+ &.type-news .search-item-img:before{
+  background-color: @type-news;
+  content: '\f0a1'; /* fa-bullhorn */
+ }
+ &.type-forum .search-item-img:before{
+  background-color: @type-drive;
+  content: '\f10d'; /* fa-quote-left */
+ }
+ &.type-drive .search-item-img:before{
+  background-color: @type-drive;
+  content: '\f0a0';
+ }
+ &.type-drive .search-item-img:before{
+  background-color: @type-drive;
+  content: '\f0a0';
+ }
+ &.type-drive .search-item-img:before{
+  background-color: @type-drive;
+  content: '\f0a0';
+ }
+ &.type-drive .search-item-img:before{
+  background-color: @type-drive;
+  content: '\f0a0';
+ }
+}
+
+/* Btn app */
+.sr-app-list-wrapper {
+ .sr-app-list {
+ }
+ .btn-app {
+
+  background: @main-color;
+  color: #fff;
+  border: 1px solid @main-color;
+  border-radius: 80px;
+  &:hover {
+   background: darken(@main-color,5%);
+  }
+  .fa {
+  }
+ }
+}
+
+
+/* Appbar */
+
+.app-bar {
+ background: #CBD3DE;
+ &.edit-mode {
+  .app-bar-options {
+   .btn {
+    background: @main-color;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px rgba(0,0,0,0.11) inset;
+    &:hover {
+     background: darken( @main-color, 5%);
+    }
+    .fa:before {
+
+     color: #fff;
+    }
+   }
+  }
+ }
+ .app-bar-options {
+  background: #CBD3DE;
+
+  &:after {
+   content: '';
+   height: 100%;
+   width: 20px;
+   position: absolute;
+   left: -20px;
+   top: 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
+   background: -moz-linear-gradient(right,  #CBD3DE 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, right top, left top, color-stop(0%,#CBD3DE), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(right,  #CBD3DE 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(right,  #CBD3DE 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(right,  #CBD3DE 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+   background: linear-gradient(to left,  #CBD3DE 0%,rgba(255,255,255,0) 100%); /* W3C */
+  }
+ }
+ .btn-applink {
+  background: #F3F5FB;
+  &:hover {
+   background: #fff;
+   box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px #fff inset;
+   .app-favicon {
+   }
+  }
+  .app-favicon {
+   &.fav-color-a {background: @fav-color-a;}
+   &.fav-color-b {background: @fav-color-b;}
+   &.fav-color-c {background: @fav-color-c;}
+   &.fav-color-d {background: @fav-color-d;}
+   &.fav-color-e {background: @fav-color-e;}
+   &.fav-color-f {background: @fav-color-f;}
+  }
+ }
+}
+
+/* Main tab */
+
+.main-tabs {
+ background: #FBFBFB;
+ box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.3);
+ .tab-item {
+  color: #B5B5B5;
+  &.active,
+  &.active:hover{
+   color: #444;
+   box-shadow: 0 -4px 0 @main-color inset;
+  }
+  &:hover {
+
+  }
+ }
+}
+
+/* Alerts */
+
+.box-alert {
+ .box-alerts-list {
+  .alert {
+   background: #F0F4F8;
+   border: 1px solid #E1E6EB;
+   color: #495158;
+   &:hover {
+    background: @main-color;
+    border: 1px solid darken(@main-color, 5%);
+    color: #fff;
+    .fa {
+     color: #fff;
+    }
+   }
+   &:after {
+    color: rgba(0,0,0,0.15);
+   }
+   .fa {
+    color: #B7C5D1;
+   }
+  }
+
+ }
+}
+
+/* Timeline */
+
+.timeline-wrapper {
+ .post-box {
+  border-bottom: 1px solid #ECECEC;
+  .post-thumb {
+   .post-img {
+    background-color: #E9EFF1;
+   }
+   .post-type {
+    color: #fff;
+    background: #444;
+    &.type-news {
+     background: @type-news;
+    }
+    &.type-image {
+     background: @type-image;
+    }
+    &.type-broadcast {
+     background: @type-broadcast;
+     color: #444;
+    }
+    &.type-workspace {
+     background: @type-workspace;
+    }
+    &.type-forum {
+     background: @type-forum;
+    }
+    &.type-drive {
+     background: @type-drive;
+    }
+   }
+  }
+  .post-header {
+   .post-author {
+   }
+   .post-origin {
+
+   }
+   .post-timestap {
+    color: #919191;
+   }
+  }
+  .post-content {
+   .post-desc {
+   }
+  }
+ }
+}

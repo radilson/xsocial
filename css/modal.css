@@ -1,0 +1,29 @@
+/*
+ * Component: modal
+ * ----------------
+ */
+.modal {
+  background: rgba(26, 43, 66, 0.2);
+}
+.modal .modal-dialog {
+  margin-top: 0;
+}
+.modal-content {
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125) !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125) !important;
+  border: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125) !important;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125) !important;
+  }
+}
+.modal-header {
+  border-bottom-color: #f4f4f4;
+  padding: 12px 15px;
+}
+.modal-footer {
+  border-top-color: #f4f4f4;
+}

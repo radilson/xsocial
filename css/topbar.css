@@ -1,0 +1,455 @@
+/*
+ * Componente: Barra Superior
+ * ----------------------
+ */
+.main-header {
+  position: relative;
+  max-height: 100px;
+  z-index: 1030;
+}
+.main-header > .navbar {
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  -o-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+  margin-bottom: 0;
+  border: none;
+  min-height: 50px;
+  border-radius: 0;
+}
+.layout-top-nav .main-header > .navbar {
+  margin-left: 0!important;
+}
+.main-header #navbar-search-input {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: transparent;
+}
+.main-header #navbar-search-input:focus,
+.main-header #navbar-search-input:active {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(255, 255, 255, 0.9);
+}
+.main-header #navbar-search-input::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.main-header #navbar-search-input:-ms-input-placeholder {
+  color: #ccc;
+}
+.main-header #navbar-search-input::-webkit-input-placeholder {
+  color: #ccc;
+}
+.main-header .navbar-custom-menu {
+  float: left;
+}
+.main-header .navbar-right {
+  float: right;
+}
+.main-header .sidebar-toggle {
+  background-color: transparent;
+  background-image: none;
+  float: left;
+  font-family: fontAwesome;
+  line-height: 50px;
+  padding: 0 15px;
+  text-align: center;
+  width: 56px;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+.main-header .sidebar-toggle:before {
+  content: "\f0c9";
+}
+.main-header .sidebar-toggle:hover {
+  color: #fff;
+}
+.wrapper.active .main-header .sidebar-toggle {
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.wrapper.active .main-header .sidebar-toggle:before {
+  content: "\f00d";
+}
+.main-header .sidebar-toggle:focus,
+.main-header .sidebar-toggle:active {
+  background: transparent;
+}
+.main-header .sidebar-toggle .icon-bar {
+  display: none;
+}
+.main-header .navbar .nav > li.user > a > .fa,
+.main-header .navbar .nav > li.user > a > .glyphicon,
+.main-header .navbar .nav > li.user > a > .ion {
+  margin-right: 5px;
+}
+.main-header .navbar .nav > li > a > .label {
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  text-align: center;
+  font-size: 9px;
+  padding: 2px 3px;
+  line-height: .9;
+}
+.main-header .app-logo {
+  background-color: #5c6774;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  display: block;
+  float: left;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 15px;
+  font-weight: 300;
+  overflow: hidden;
+}
+.logo-mini {
+  width: 114px;
+  height: 20px;
+  background: url('../img/logo.png') no-repeat;
+  background-size: 114px 20px;
+  overflow: hidden;
+  text-indent: -999em;
+}
+.logo-lg {
+  width: 114px;
+  height: 20px;
+  background: url('../img/logo.png') no-repeat;
+  background-size: 114px 20px;
+  overflow: hidden;
+  text-indent: -999em;
+  margin-top: 15px;
+}
+.main-header .app-logo .logo-lg {
+  display: block;
+}
+.main-header .app-logo .logo-mini {
+  display: none;
+}
+.main-header .navbar-brand {
+  color: #fff;
+}
+.content-header {
+  position: relative;
+  padding: 15px 15px 0 15px;
+}
+.content-header > h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.content-header > h1 > small {
+  font-size: 15px;
+  display: inline-block;
+  padding-left: 4px;
+  font-weight: 300;
+}
+.content-header > .breadcrumb {
+  float: right;
+  background: transparent;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 12px;
+  padding: 7px 5px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border-radius: 2px;
+}
+.content-header > .breadcrumb > li > a {
+  color: #444;
+  text-decoration: none;
+  display: inline-block;
+}
+.content-header > .breadcrumb > li > a > .fa,
+.content-header > .breadcrumb > li > a > .glyphicon,
+.content-header > .breadcrumb > li > a > .ion {
+  margin-right: 5px;
+}
+.content-header > .breadcrumb > li + li:before {
+  content: '>\00a0';
+}
+.main-tabs {
+  background: #fff;
+  height: 50px;
+  text-align: center;
+}
+.main-tabs .tab-item {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'latobold';
+  font-size: 16px;
+  color: #B5B5B5;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.main-tabs .tab-item.active,
+.main-tabs .tab-item.active:hover {
+  color: #444;
+  box-shadow: 0 -4px 0 #444444 inset;
+  box-shadow: 0 -4px 0 #d8d8d8 inset;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-tabs .tab-item:hover {
+  color: #444;
+  box-shadow: 0 -4px 0 rgba(203, 210, 216, 0.38) inset;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.topbar-utilities {
+  height: 50px;
+}
+.topbar-utilities > .dropdown {
+  float: left;
+}
+.topbar-utilities > .dropdown > a {
+  padding: 0px 12px;
+  float: left;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 20px;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+}
+.topbar-utilities > .dropdown > a .label {
+  position: absolute;
+  color: #fff;
+  background: #50A1FF;
+  font-size: 10px;
+  padding: 0 5px;
+  height: 15px;
+  line-height: 14px;
+  font-family: 'latoblack';
+  border-radius: 24px;
+  right: 3px;
+  top: 10px;
+  text-indent: -1px;
+  font-weight: 700;
+}
+.topbar-utilities > .dropdown > a:hover {
+  color: #fff;
+}
+.topbar-utilities > .dropdown.message-box.open > a.dropdown-toggle {
+  background: rgba(0, 0, 0, 0.1);
+}
+.topbar-utilities > .dropdown.message-box .btn-message {
+  font-size: 18px;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu {
+  width: 280px;
+  padding: 0 0 0 0;
+  margin: 0;
+  top: 100%;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu > li.header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ffffff;
+  padding: 7px 10px;
+  border-bottom: 1px solid #f4f4f4;
+  color: #444444;
+  font-size: 12px;
+  text-align: center;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu > li.footer a {
+  color: #444444;
+  font-size: 12px;
+  padding: 7px 10px;
+  text-align: center;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu {
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li.new a:before {
+  content: '';
+  left: 5px;
+  top: 50%;
+  position: absolute;
+  background: #4A90E2;
+  border-radius: 20px;
+  height: 6px;
+  width: 6px;
+  margin-top: -3px;
+  z-index: 1;
+  box-shadow: 0 0 0 2px #fff;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li.new a h4 {
+  font-family: latobold;
+  color: #444;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li.new a p {
+  color: #444;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li a {
+  margin: 0px;
+  padding: 10px 10px 10px 60px;
+  display: block;
+  white-space: nowrap;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li a:hover {
+  background: #f4f4f4;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li a .user-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #E9EFF1;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  left: 8px;
+  top: 7px;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li a h4 {
+  padding: 0;
+  margin: 0;
+  color: #999999;
+  font-size: 15px;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li a h4 small {
+  color: #999999;
+  font-size: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.topbar-utilities > .dropdown.message-box > .dropdown-menu .menu li a p {
+  margin: 0;
+  font-size: 12px;
+  color: #888888;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.topbar-utilities > .dropdown > .dropdown-menu {
+  position: absolute;
+  right: auto;
+  left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 14px;
+}
+.btn-user-profile.open .btn {
+  background: rgba(0, 0, 0, 0.1);
+}
+.btn-user-profile .btn {
+  height: 50px;
+  border: 0;
+  border-radius: 0;
+  padding-left: 60px;
+  color: #fff;
+  background: transparent;
+}
+.btn-user-profile .btn .user-avatar {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #fff;
+  background-color: #E9EFF1;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.btn-user-profile .btn .user-name {
+  margin: 0 5px 0 0;
+}
+.chat-toggle {
+  background-color: transparent;
+  background-image: none;
+  line-height: 50px;
+  padding: 0 15px;
+  text-align: center;
+  width: 56px;
+  color: rgba(255, 255, 255, 0.8);
+  float: right;
+  font-size: 24px;
+}
+.chat-toggle:hover,
+.chat-toggle:focus {
+  color: #fff;
+}
+.bar-top {
+  float: left;
+}
+.bar-top .navbar-left {
+  float: left;
+}
+.bar-bot {
+  float: right;
+}
+@media (max-width: 767px) {
+  .bar-top {
+    float: none;
+    display: block;
+  }
+  .bar-top:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .bar-top .navbar-left {
+    float: right;
+    margin-right: 56px;
+  }
+  .bar-top .navbar-left .topbar-utilities > .dropdown > .dropdown-menu {
+    right: -70px;
+    left: auto;
+  }
+  .bar-bot {
+    background: rgba(0, 0, 0, 0.1);
+    float: none;
+    height: 50px;
+  }
+  .chat-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .btn-user-profile.open .btn {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .btn-user-profile .btn {
+    padding: 0 0 0 60px;
+  }
+  .btn-user-profile .btn .caret {
+    position: absolute;
+    left: 25px;
+    bottom: 4px;
+  }
+  .btn-user-profile .btn .user-name {
+    display: none;
+  }
+}

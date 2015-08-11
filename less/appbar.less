@@ -1,0 +1,122 @@
+.app-bar {
+  background: #DEE2E7;
+  position: relative;
+  &.edit-mode {
+    .btn-applink {
+      animation: wiggle 0.1s linear 0s infinite alternate;
+      .btn-remove {
+        display: block;
+      }
+    }
+    .app-bar-options {
+      .btn {
+        background: #21E649;
+        box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px rgba(0,0,0,0.11) inset;
+        &:hover {
+          background: #12CC38;
+        }
+        .fa:before {
+          content: '\f00c';
+          color: #fff;
+        }
+      }
+    }
+  }
+  .app-bar-list {
+    padding: 10px 60px 10px 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .app-bar-options {
+    background: #DEE2E7;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    .dropdown-menu {
+      right: 10px;
+      margin-top: -10px;
+    }
+    .btn {
+      border: 0;
+      height: 36px;
+      width: 36px;
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px #fff inset;
+      border-radius: 2px;
+      background: #F3F5FB;
+      color: #898996;
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px #fff inset;
+      &:hover {
+        color: #616171;
+        background: #fff;
+        box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px #fff inset;
+      }
+    }
+  }
+    .btn-applink {
+      color: #444;
+      position: relative;
+      border: 0;
+      height: 36px;
+      line-height: 36px;
+      padding: 0px 12px;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px #fff inset;
+      border-radius: 2px;
+      margin-right: 5px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      font-family: 'latobold';
+      .btn-remove {
+        background: #444;
+        color: #fff;
+        display: none;
+        position: absolute;
+        right: -4px;
+        top: -4px;
+        height: 16px;
+        line-height: 16px;
+        padding: 0;
+        width: 16px;
+        border-radius: 10px;
+        font-size: 10px;
+        border: 0;
+        text-align: center;
+      }
+      &:hover {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.11), 0 0 0 1px #fff inset;
+        background: #fff;
+      }
+      .app-favicon {
+        font-family: 'latobold';
+        background: #444;
+        float: left;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        overflow: hidden;
+        border-radius: 2px;
+        color: #fff;
+        margin: 10px 5px 0 0;
+      }
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+  }
+}
