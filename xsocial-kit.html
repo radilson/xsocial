@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rede CorpSUS</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap 3.3.4 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Theme style -->
+    <link href="css/app-base.css" rel="stylesheet" type="text/css" />
+    <!-- BxSlider -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sidebar-mini fixed">
+
+<!-- Acesso Rapido -->
+<div class="fast-access">
+    <div class="menu-wrap">
+        <nav class="fast-menu">
+            <span class="title">Acesso Rápido</span>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#"><i class="fa fa-phone"></i> Encontrar ramal</a></li>
+                <li><a href="#"><i class="fa fa-check"></i> Nova tarefa</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Enviar mensagem</a></li>
+                <li><a href="#"><i class="fa fa-calendar"></i> Novo evento</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-button" id="open-button">
+        <i class="fa fa-fast-access-icon"></i>
+    </div>
+</div>
+
+<div class="wrapper">
+
+
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+
+
+        <!-- Header Navbar -->
+        <div class="navbar navbar-static-top" role="navigation">
+
+            <div class="bar-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+
+                <!-- Logo -->
+                <a href="index.html" class="app-logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">Corpsus</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img height="20px" src="img/logo.png"/></span>
+                </a>
+
+
+                <div class="navbar-left">
+                    <div class="topbar-utilities">
+
+                        <div class="dropdown message-box">
+                            <a href="#"  class="btn-message  dropdown-toggle" type="button" id="msgBox" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label">12</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="msgBox">
+                                <li class="header">Você tem <b>2</b> mensagens novas</li>
+                                <li>
+                                    <ul class="menu">
+                                        <!-- inner menu: Os dados de fato -->
+                                        <li class="new"><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li class="new"><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">Ver todas</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown notification-box">
+                            <a href="#"  class="btn-notification  dropdown-toggle" type="button" id="msgBox" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-globe"></i>
+                                <span class="label">3</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="msgBox">
+                                <li class="header">Você tem <b>4</b> novas mensagens</li>
+                                <li>
+                                    <ul class="menu">
+                                        <!-- inner menu: Os dados de fato -->
+                                        <li class="new"><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">Ver todas</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bar-bot">
+                <a href="#" class="btn btn-search" data-toggle="modal" data-target="#appSearch">
+                    <i class="fa fa-search"></i>
+                    <span class="msg-long">Digite em qualquer lugar para pesquisar…</span>
+                    <span class="msg-short">Pesquise na rede...</span>
+                </a>
+                <a href="#" class="chat-toggle">
+                    <i class="fa fa-comments"></i>
+                </a>
+                <div class="btn-user-profile btn-group pull-right">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                        <span class="user-name">Juliano Alves</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <!-- Optionally, you can add icons to the links -->
+                <li class="active">
+                    <a href="#">
+                        <span>Home</span>
+                <span class="icon-thumb">
+                  <i class="fa fa-home"></i>
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                <span class="item-detailed">
+                  <span>Contatos</span>
+                  <i>2 contatos novos</i>
+                </span>
+                        <span class="label">3</span>
+                <span class="icon-thumb">
+                  <i class="fa fa-user"></i>
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Tarefas</span>
+                <span class="icon-thumb">
+                  <i class="fa fa-check-square"></i>
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Disco Virtual</span>
+                <span class="icon-thumb">
+                  <i class="fa fa-hdd-o"></i>
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Documentos</span>
+                <span class="icon-thumb">
+                  <i class="fa fa-file-o"></i>
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Mais</span>
+                <span class="icon-thumb">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                    </a>
+                </li>
+            </ul><!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+
+
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+
+        <!-- Barra de sistemas -->
+        <div class="app-bar"><!-- Adicionar classe 'edit-mode' para o modo de edição -->
+            <div class="app-bar-list">
+
+                <a href="#" target="_blank" class="btn btn-applink">
+                    <i class="app-favicon fav-color-a">G</i>Google
+                    <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
+                </a>
+                <a href="#" target="_blank" class="btn btn-applink">
+                    <i class="app-favicon fav-color-b">G</i>Google
+                    <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
+                </a>
+                <a href="#" target="_blank" class="btn btn-applink">
+                    <i class="app-favicon fav-color-c">G</i>Google
+                    <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
+                </a>
+                <a href="#" target="_blank" class="btn btn-applink">
+                    <i class="app-favicon fav-color-d">G</i>Google
+                    <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
+                </a>
+                <a href="#" target="_blank" class="btn btn-applink">
+                    <i class="app-favicon fav-color-e">G</i>Google
+                    <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
+                </a>
+                <a href="#" target="_blank" class="btn btn-applink">
+                    <i class="app-favicon fav-color-f">G</i>Google
+                    <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
+                </a>
+
+            </div>
+
+            <div class="btn-group app-bar-options">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="#" data-toggle="modal" data-target="#new-link">Novo link</a></li>
+                    <li><a href="#">Modo de edição</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="container-fluid">
+
+                <!-- Painéis -->
+
+                <h3 class="page-header">Painéis - Box</h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo de painel simples (Cabeçalho)</h3>
+                                <div class="box-tools pull-right">
+                                    <button class="btn btn-box-tool" data-widget="" data-toggle="tooltip" title="Tooltip"><i class="fa fa-user"></i></button>
+                                    <button class="btn btn-box-tool" data-widget="" data-toggle="tooltip" title="Tooltip"><i class="fa fa-plus"></i></button>
+                                    <button class="btn btn-box-tool" data-widget="" data-toggle="tooltip" title="Tooltip"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-box-tool" data-widget="" data-toggle="tooltip" title="Tooltip"><i class="fa fa-remove"></i></button>
+                                    <button class="btn btn-box-tool" data-widget="" data-toggle="tooltip" title="Tooltip"><i class="fa fa-check"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus. Nullam cursus lectus non etiam enim aliquet.
+                                (Corpo da painel)
+                            </div>
+                            <div class="box-footer">
+                                (Rodapé do painel)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo de painel com borda</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Primary</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-info">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Info</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-4">
+                        <div class="box box-warning">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Warning</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Success</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-danger">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Danger</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box box-default box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo de painel com borda</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-primary box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Primary</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-info box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Info</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-4">
+                        <div class="box box-warning box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Warning</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-success box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Success</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box box-danger box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Exemplo painel - Danger</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim ut venenatis egestas, nam ac, vitae vitae facilisis sit rhoncus.
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                </div>
+
+
+                <h3 class="page-header">Painéis com abas</h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Custom Tabs -->
+                        <div class="nav-tabs-custom">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab_1" data-toggle="tab">Aba 1</a></li>
+                                <li><a href="#tab_2" data-toggle="tab">Aba 2</a></li>
+                                <li><a href="#tab_3" data-toggle="tab">Aba 3</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                        <li role="presentation" class="divider"></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                                <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab_1">
+                                    <b>Como usar:</b>
+                                    <i>Exatamente como a do bootstrap, mas deve ser envolvido com uma div com a classe <code>.nav-tabs-custom</code> pra ficar com esse layout.</i>
+                                    <br>
+                                    <br>
+                                    A wonderful serenity has taken possession of my entire soul,
+                                    like these sweet mornings of spring which I enjoy with my whole heart.
+                                    I am alone, and feel the charm of existence in this spot,
+                                    which was created for the bliss of souls like mine. I am so happy,
+                                    my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
+                                    that I neglect my talents. I should be incapable of drawing a single stroke
+                                    at the present moment; and yet I feel that I never was a greater artist than now.
+                                </div><!-- /.tab-pane -->
+                                <div class="tab-pane" id="tab_2">
+                                    The European languages are members of the same family. Their separate existence is a myth.
+                                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                                    new common language would be desirable: one could refuse to pay expensive translators. To
+                                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                                    words. If several languages coalesce, the grammar of the resulting language is more simple
+                                    and regular than that of the individual languages.
+                                </div><!-- /.tab-pane -->
+                                <div class="tab-pane" id="tab_3">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                                    like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div><!-- /.tab-pane -->
+                            </div><!-- /.tab-content -->
+                        </div><!-- nav-tabs-custom -->
+                    </div>
+                </div>
+
+                <!-- Tipografia  -->
+
+                <h3 class="page-header">Tipografia</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <i class="fa fa-text-width"></i>
+                                <h3 class="box-title">Headlines</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <h1>h1. Bootstrap heading</h1>
+                                <h2>h2. Bootstrap heading</h2>
+                                <h3>h3. Bootstrap heading</h3>
+                                <h4>h4. Bootstrap heading</h4>
+                                <h5>h5. Bootstrap heading</h5>
+                                <h6>h6. Bootstrap heading</h6>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- ./col -->
+                    <div class="col-md-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <i class="fa fa-text-width"></i>
+                                <h3 class="box-title">Enfase de textos</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <p class="lead">Lead para enfatizar a importância</p>
+                                <p class="text-green">Estilo de texto - Success</p>
+                                <p class="text-aqua">Estilo de texto - Info</p>
+                                <p class="text-light-blue">Estilo de texto - Info (2)</p>
+                                <p class="text-red">Estilo de texto - Danger</p>
+                                <p class="text-yellow">Estilo de texto - Warning</p>
+                                <p class="text-muted">Estilo de texto - Geral</p>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- ./col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <i class="fa fa-list-ul"></i>
+                                <h3 class="box-title">Lista comum</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Facilisis in pretium nisl aliquet</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ul>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                            <li>Vestibulum laoreet porttitor sem</li>
+                                            <li>Ac tristique libero volutpat at</li>
+                                        </ul>
+                                    </li>
+                                    <li>Faucibus porta lacus fringilla vel</li>
+                                    <li>Aenean sit amet erat nunc</li>
+                                    <li>Eget porttitor lorem</li>
+                                </ul>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- ./col -->
+                    <div class="col-md-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <i class="fa fa-list-ol"></i>
+                                <h3 class="box-title">Lista ordenada</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Facilisis in pretium nisl aliquet</li>
+                                    <li>Nulla volutpat aliquam velit
+                                        <ol>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                            <li>Vestibulum laoreet porttitor sem</li>
+                                            <li>Ac tristique libero volutpat at</li>
+                                        </ol>
+                                    </li>
+                                    <li>Faucibus porta lacus fringilla vel</li>
+                                    <li>Aenean sit amet erat nunc</li>
+                                    <li>Eget porttitor lorem</li>
+                                </ol>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- ./col -->
+
+                </div>
+
+                <!-- Botões -->
+
+                <h3 class="page-header">Botões</h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <i class="fa fa-edit"></i>
+                                <h3 class="box-title">Botões</h3>
+                            </div>
+                            <div class="box-body pad table-responsive">
+                                <p>Vários estilos de botões. Usando a classe <code>.btn</code></p>
+                                <table class="table table-bordered text-center">
+                                    <tbody><tr>
+                                        <th>Normal</th>
+                                        <th>Large <code>.btn-lg</code></th>
+                                        <th>Small <code>.btn-sm</code></th>
+                                        <th>X-Small <code>.btn-xs</code></th>
+                                        <th>Flat <code>.btn-flat</code></th>
+                                        <th>Disabled <code>.disabled</code></th>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-block btn-default">Default</button></td>
+                                        <td><button class="btn btn-block btn-default btn-lg">Default</button></td>
+                                        <td><button class="btn btn-block btn-default btn-sm">Default</button></td>
+                                        <td><button class="btn btn-block btn-default btn-xs">Default</button></td>
+                                        <td><button class="btn btn-block btn-default btn-flat">Default</button></td>
+                                        <td><button class="btn btn-block btn-default disabled">Default</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-block btn-primary">Primary</button></td>
+                                        <td><button class="btn btn-block btn-primary btn-lg">Primary</button></td>
+                                        <td><button class="btn btn-block btn-primary btn-sm">Primary</button></td>
+                                        <td><button class="btn btn-block btn-primary btn-xs">Primary</button></td>
+                                        <td><button class="btn btn-block btn-primary btn-flat">Primary</button></td>
+                                        <td><button class="btn btn-block btn-primary disabled">Primary</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-block btn-success">Success</button></td>
+                                        <td><button class="btn btn-block btn-success btn-lg">Success</button></td>
+                                        <td><button class="btn btn-block btn-success btn-sm">Success</button></td>
+                                        <td><button class="btn btn-block btn-success btn-xs">Success</button></td>
+                                        <td><button class="btn btn-block btn-success btn-flat">Success</button></td>
+                                        <td><button class="btn btn-block btn-success disabled">Success</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-block btn-info">Info</button></td>
+                                        <td><button class="btn btn-block btn-info btn-lg">Info</button></td>
+                                        <td><button class="btn btn-block btn-info btn-sm">Info</button></td>
+                                        <td><button class="btn btn-block btn-info btn-xs">Info</button></td>
+                                        <td><button class="btn btn-block btn-info btn-flat">Info</button></td>
+                                        <td><button class="btn btn-block btn-info disabled">Info</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-block btn-danger">Danger</button></td>
+                                        <td><button class="btn btn-block btn-danger btn-lg">Danger</button></td>
+                                        <td><button class="btn btn-block btn-danger btn-sm">Danger</button></td>
+                                        <td><button class="btn btn-block btn-danger btn-xs">Danger</button></td>
+                                        <td><button class="btn btn-block btn-danger btn-flat">Danger</button></td>
+                                        <td><button class="btn btn-block btn-danger disabled">Danger</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-block btn-warning">Warning</button></td>
+                                        <td><button class="btn btn-block btn-warning btn-lg">Warning</button></td>
+                                        <td><button class="btn btn-block btn-warning btn-sm">Warning</button></td>
+                                        <td><button class="btn btn-block btn-warning btn-xs">Warning</button></td>
+                                        <td><button class="btn btn-block btn-warning btn-flat">Warning</button></td>
+                                        <td><button class="btn btn-block btn-warning disabled">Warning</button></td>
+                                    </tr>
+                                    </tbody></table>
+                            </div><!-- /.box -->
+                        </div>
+                    </div><!-- /.col -->
+                </div>
+
+                <!-- Formulários -->
+
+                <h3 class="page-header">Formulários</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Formulário comum</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <form class="">
+                                    <!-- text input -->
+                                    <div class="form-group">
+                                        <label>Text</label>
+                                        <input type="text" class="form-control" placeholder="Enter ...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Text Disabled</label>
+                                        <input type="text" class="form-control" placeholder="Enter ..." disabled="">
+                                    </div>
+
+                                    <!-- textarea -->
+                                    <div class="form-group">
+                                        <label>Textarea</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Textarea Disabled</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter ..." disabled=""></textarea>
+                                    </div>
+
+                                    <!-- input states -->
+                                    <div class="form-group has-success">
+                                        <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>
+                                        <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                                    </div>
+                                    <div class="form-group has-warning">
+                                        <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Input with warning</label>
+                                        <input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
+                                    </div>
+                                    <div class="form-group has-error">
+                                        <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Input with error</label>
+                                        <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+                                    </div>
+
+                                    <!-- checkbox -->
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                Checkbox 1
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">
+                                                Checkbox 2
+                                            </label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" disabled="">
+                                                Checkbox disabled
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- radio -->
+                                    <div class="form-group">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                Option one is this and that—be sure to include why it's great
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                Option two can be something else and selecting it will deselect option one
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                                                Option three is disabled
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- select -->
+                                    <div class="form-group">
+                                        <label>Select</label>
+                                        <select class="form-control">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Select Disabled</label>
+                                        <select class="form-control" disabled="">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Select multiple-->
+                                    <div class="form-group">
+                                        <label>Select Multiple</label>
+                                        <select multiple="" class="form-control">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Select Multiple Disabled</label>
+                                        <select multiple="" class="form-control" disabled="">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
+                                    </div>
+
+                                </form>
+                            </div><!-- /.box-body -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Formulário horizontal <small>*Recomendado</small></h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <form class="form-horizontal">
+
+                                    <h4 class="form-legend">Subtitulo de um formulário</h4>
+
+                                    <!-- text input -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Text</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Text Disabled</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" placeholder="Enter ..." disabled="">
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- textarea -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Textarea</label>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Textarea Disabled</label>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" rows="3" placeholder="Enter ..." disabled=""></textarea>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="form-legend">Subtitulo de um formulário</h4>
+
+                                    <!-- input states -->
+                                    <div class="form-group has-success">
+                                        <label class="col-md-4 control-label" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group has-warning">
+                                        <label class="col-md-4 control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Input with warning</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group has-error">
+                                        <label class="col-md-4 control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Input with error</label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="inputError" placeholder="Enter ...">
+                                        </div>
+                                    </div>
+
+                                    <!-- checkbox -->
+                                    <div class="form-group">
+                                        <div class="col-md-8 col-md-push-4">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Checkbox 1
+                                                </label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Checkbox 2
+                                                </label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" disabled="">
+                                                    Checkbox disabled
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- radio -->
+                                    <div class="form-group">
+                                        <div class="col-md-8 col-md-push-4">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                    Option one is this and that—be sure to include why it's great
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                    Option two can be something else and selecting it will deselect option one
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                                                    Option three is disabled
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="form-legend">Subtitulo de um formulário</h4>
+
+                                    <!-- select -->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-4">Select</label>
+                                        <div class="col-md-8">
+                                             <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                             </select>
+                                         </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-4">Select Disabled</label>
+                                        <div class="col-md-8">
+                                            <select class="form-control" disabled="">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Select multiple-->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-4">Select Multiple</label>
+                                        <div class="col-md-8">
+                                            <select multiple="" class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="form-legend">Subtitulo de um formulário</h4>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-4">Select Multiple Disabled</label>
+                                        <div class="col-md-8">
+                                            <select multiple="" class="form-control" disabled="">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div><!-- /.box-body -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabelas -->
+
+                <h3 class="page-header">Tabelas</h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid">
+                            <div class="box-header">
+                                <h3 class="box-title">Tabela Completa</h3>
+                                <div class="box-tools">
+                                    <ul class="pagination pagination-sm no-margin pull-right">
+                                        <li><a href="#">«</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body no-padding">
+                                <table class="table">
+                                    <tbody><tr>
+                                        <th style="width: 10px">#</th>
+                                        <th>Tarefa</th>
+                                        <th>Progresso</th>
+                                        <th style="width: 40px">Label</th>
+                                        <th style="width: 70px"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-red">55%</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-pencil"></i> </a>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-remove"></i> </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-yellow">70%</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-pencil"></i> </a>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-remove"></i> </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs progress-striped active">
+                                                <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-light-blue">30%</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-pencil"></i> </a>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-remove"></i> </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs progress-striped active">
+                                                <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-green">90%</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-pencil"></i> </a>
+                                            <a href="#" class="btn btn-xs"><i class="fa fa-remove"></i> </a>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div><!-- /.box-body -->
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Tabela com bordas e paginação embaixo</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <table class="table table-bordered">
+                                    <tbody><tr>
+                                        <th style="width: 10px">#</th>
+                                        <th>Task</th>
+                                        <th>Progress</th>
+                                        <th style="width: 40px">Label</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-red">55%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-yellow">70%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs progress-striped active">
+                                                <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-light-blue">30%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Lorem ipsum dolor sit amet, suspendisse vel sagittis aliquet donec, dignissim.</td>
+                                        <td>
+                                            <div class="progress progress-xs progress-striped active">
+                                                <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-green">90%</span></td>
+                                    </tr>
+                                    </tbody></table>
+                            </div><!-- /.box-body -->
+                            <div class="box-footer clearfix">
+                                <ul class="pagination pagination-sm no-margin pull-right">
+                                    <li><a href="#">«</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">»</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="box box-solid">
+                            <div class="box-header">
+                                <h3 class="box-title">Tabela responsiva com :hover</h3>
+                                <div class="box-tools">
+                                    <div class="input-group" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Busca">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+                                    <tbody><tr>
+                                        <th>ID</th>
+                                        <th>User</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Reason</th>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-success">Aprovado</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-warning">Pendente</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-primary">Aprovado</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-danger">Negado</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    </tbody></table>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Estado vazio</h3>
+                                <div class="box-tools">
+                                    <div class="input-group" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Busca">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body no-padding">
+                                <div class="empty-state">
+                                    <i class="fa fa-user"></i>
+                                    <b>Nenhum contato</b>
+                                    <small>Você ainda não adicionou nenhum contato</small>
+                                    <button class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> Adicionar</button>
+                                </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">LOADER + MENSAGEM</h3>
+                                <div class="box-tools">
+                                    <div class="input-group" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Busca">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body no-padding">
+                                <div class='loading-wrapper loading-box'>
+                                    <div class="spinner">
+                                        <div class="rect1"></div>
+                                        <div class="rect2"></div>
+                                        <div class="rect3"></div>
+                                        <div class="rect4"></div>
+                                        <div class="rect5"></div>
+                                    </div>
+                                    <b>Carregando...</b>
+                                </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">LOADER</h3>
+                                <div class="box-tools">
+                                    <div class="input-group" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Busca">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body no-padding">
+                                <div class='loading-wrapper loading-box'>
+                                    <div class="spinner">
+                                        <div class="rect1"></div>
+                                        <div class="rect2"></div>
+                                        <div class="rect3"></div>
+                                        <div class="rect4"></div>
+                                        <div class="rect5"></div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="box box-solid">
+                            <div class="box-header">
+                                <h3 class="box-title">Tabela com loader</h3>
+                                <div class="box-tools">
+                                    <div class="input-group" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Busca">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+                                    <tbody><tr>
+                                        <th>ID</th>
+                                        <th>User</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Reason</th>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-success">Aprovado</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-warning">Pendente</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-primary">Aprovado</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>11-7-2014</td>
+                                        <td><span class="label label-danger">Negado</span></td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                    </tr>
+                                    </tbody></table>
+                                <div class='loading-wrapper'>
+                                    <div class="spinner">
+                                        <div class="rect1"></div>
+                                        <div class="rect2"></div>
+                                        <div class="rect3"></div>
+                                        <div class="rect4"></div>
+                                        <div class="rect5"></div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div>
+                </div>
+
+
+                <!-- Info Box  -->
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Mensagens</span>
+                                <span class="info-box-number">1,410</span>
+                            </div><!-- /.info-box-content -->
+                        </div><!-- /.info-box -->
+                    </div><!-- /.col -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-green"><i class="fa fa-comment-o"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Comentários</span>
+                                <span class="info-box-number">410</span>
+                            </div><!-- /.info-box-content -->
+                        </div><!-- /.info-box -->
+                    </div><!-- /.col -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Arquivos</span>
+                                <span class="info-box-number">13,648</span>
+                            </div><!-- /.info-box-content -->
+                        </div><!-- /.info-box -->
+                    </div><!-- /.col -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Favoritos</span>
+                                <span class="info-box-number">93,139</span>
+                            </div><!-- /.info-box-content -->
+                        </div><!-- /.info-box -->
+                    </div><!-- /.col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <i class="fa fa-warning"></i>
+                                <h3 class="box-title">Alerts</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4><i class="icon fa fa-ban"></i> Alert!</h4>
+                                    Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                                </div>
+                                <div class="alert alert-info alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4><i class="icon fa fa-info"></i> Alert!</h4>
+                                    Info alert preview. This alert is dismissable.
+                                </div>
+                                <div class="alert alert-warning alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+                                    Warning alert preview. This alert is dismissable.
+                                </div>
+                                <div class="alert alert-success alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4>	<i class="icon fa fa-check"></i> Alert!</h4>
+                                    Success alert preview. This alert is dismissable.
+                                </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.col -->
+
+
+                </div>
+            </div>
+
+
+
+
+
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+            Anything you want
+        </div>
+        <!-- Default to the left -->
+        <a href="http://portalsaude.saude.gov.br/">http://portalsaude.saude.gov.br/</a>
+    </footer>
+
+</div><!-- ./wrapper -->
+
+
+<!------------------------------ MODAIS ------------------------------>
+<!-- Modal novo link-->
+<div class="modal fade" id="new-link" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Adicionar link</h4>
+            </div>
+            <div class="modal-body">
+
+                <form role="form">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="">Nome do sistema</label>
+                            <input type="email" class="form-control" id="" placeholder="Nome do sistema">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Deseja adicionar uma imagem?</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">Se não tiver imagem o sistema irá escolher a primeira letra do nome do sistema.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Endereço URL</label>
+                            <input type="password" class="form-control" id="" placeholder="Url">
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal BUSCA-->
+<div class="modal fade modal-search" id="appSearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <i class="fa fa-search"></i>
+                <input type="email" class="form-control search-field" placeholder="Pesquise na rede...">
+
+            </div>
+            <div class="modal-body">
+
+                <div class="search-results-wrapper">
+
+                    <div class="col-sm-6 col-search">
+                        <div class="search-list">
+                            <ul class="list-group">
+                                <!--Arquivos-->
+                                <li class="list-divider"><a href="#">Arquivos</a> <span class="label label-default">2</span></li>
+                                <li class="list-group-item type-drive">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <li class="list-group-item type-drive">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <!--Noticias-->
+                                <li class="list-divider"><a href="#">Notícias</a> <span class="label label-default">2</span></li>
+                                <li class="list-group-item type-news">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <li class="list-group-item type-news">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <!--Usuarios-->
+                                <li class="list-divider"><a href="#">Usuários</a> <span class="label label-default">2</span></li>
+                                <li class="list-group-item type-user">
+                                    <div class="search-item-img" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                    <div class="search-item-title">Pedro Sousa</div>
+                                    <div class="search-item-desc">pedro@saude.gov.br<br>Ramal · 314</div>
+                                </li>
+                                <li class="list-group-item type-user">
+                                    <div class="search-item-img" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                    <div class="search-item-title">Pedro Sousa</div>
+                                    <div class="search-item-desc">pedro@saude.gov.br<br>Ramal · 314</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-search">
+                        <div class="search-preview">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="searching-loader"><i class="fa fa-spin fa-spinner"></i></div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.1.4 -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<!--Easing -->
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<!--BxSlider -->
+<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+<!-- Classie -->
+<script src="js/classie.js" type="text/javascript"></script>
+<!-- Bootstrap 3.3.2 JS -->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- App -->
+<script src="js/app.js" type="text/javascript"></script>
+<!-- Classie -->
+<script src="js/style.js" type="text/javascript"></script>
+
+</body>
+</html>

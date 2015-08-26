@@ -325,3 +325,7 @@
 .timeline-wrapper .post-box .post-header .post-timestap {
   color: #919191;
 }
+/* Nav */
+.nav-tabs-custom > .nav-tabs > li.active {
+  border-bottom-color: #50a1ff;
+}
