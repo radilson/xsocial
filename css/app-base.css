@@ -3038,6 +3038,91 @@ a:focus {
     -webkit-transform: scaleY(1);
   }
 }
+.box-informative .box-header {
+  padding-bottom: 0;
+}
+.box-informative .informative-carousel .bx-wrapper {
+  margin: 0;
+}
+.box-informative .informative-carousel .bx-pager {
+  width: auto;
+  padding: 0;
+  text-align: left;
+  right: 70px;
+  top: -13px;
+}
+.box-informative .informative-carousel .bx-pager .bx-pager-item .bx-pager-link {
+  margin: 0 2px;
+  width: 8px;
+  height: 8px;
+  background: none;
+  box-shadow: 0 0 0 1px #B3B8BA inset;
+}
+.box-informative .informative-carousel .bx-pager .bx-pager-item .bx-pager-link.active {
+  background: #B3B8BA;
+}
+.box-informative .informative-carousel .bx-controls-direction {
+  position: absolute;
+  right: 10px;
+  top: -22px;
+  width: 50px;
+}
+.box-informative .informative-carousel .bx-controls-direction .bx-prev,
+.box-informative .informative-carousel .bx-controls-direction .bx-next {
+  left: auto;
+  right: auto;
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0;
+  top: auto;
+  float: left;
+  position: relative;
+}
+.box-informative .informative-carousel .bx-controls-direction .bx-prev:hover:before,
+.box-informative .informative-carousel .bx-controls-direction .bx-next:hover:before {
+  color: #767E82;
+}
+.box-informative .informative-carousel .bx-controls-direction .bx-prev:before,
+.box-informative .informative-carousel .bx-controls-direction .bx-next:before {
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  text-align: center;
+  line-height: 25px;
+  font-family: 'FontAwesome';
+  color: #B3B8BA;
+  text-indent: 0;
+  font-size: 26px;
+}
+.box-informative .informative-carousel .bx-controls-direction .bx-prev:before {
+  content: '\f104';
+}
+.box-informative .informative-carousel .bx-controls-direction .bx-next:before {
+  content: '\f105';
+}
+.box-informative .informative-carousel .informative-item {
+  padding: 0 15px 15px;
+}
+.box-informative .informative-carousel .informative-item .informative-title {
+  margin: 3px 0;
+  font-weight: bold;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+.box-informative .informative-carousel .informative-item .informative-desc {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #A7AFBF;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 /*
  * Component: Table
  * ----------------

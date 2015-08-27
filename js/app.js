@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider();
+  $('.informativo').bxSlider();
   $('[data-toggle="tooltip"]').tooltip()
 });
 
