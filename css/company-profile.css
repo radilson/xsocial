@@ -1,0 +1,271 @@
+.company-menu.company-menu-config {
+  padding-right: 50px;
+}
+.company-menu.company-menu-config .btn-menu-config {
+  display: block;
+}
+.company-menu .btn-menu-config {
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  background: none;
+  border: 0;
+  font-size: 20px;
+  color: #CED5DA;
+}
+.company-menu .btn-menu-config:hover {
+  color: #8D969C;
+  background: none !important;
+}
+.company-menu .nav li {
+  border-right: 1px solid #ECF0F5;
+  margin: 0;
+}
+.company-menu .nav li.active a {
+  background: #50a1ff;
+}
+.company-menu .nav li:last-child {
+  border: 0;
+}
+.company-menu .nav li a {
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 2px;
+  border: 0;
+}
+.box-company-org.box-menu-config .box-header {
+  padding-right: 50px;
+}
+.box-company-org.box-menu-config .btn-menu-config {
+  display: block;
+}
+.box-company-org .box-header {
+  padding: 8px 4px;
+}
+.box-company-org .box-header .btn-menu-config {
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  background: none;
+  border: 0;
+  font-size: 20px;
+  color: #CED5DA;
+}
+.box-company-org .box-header .btn-menu-config:hover {
+  color: #8D969C;
+  background: none !important;
+}
+.box-company-org .nav li {
+  margin: 0;
+}
+.box-company-org .nav li.active a,
+.box-company-org .nav li.active a:hover {
+  background: #50a1ff !important;
+  position: relative;
+  border: 1px solid #50a1ff;
+  color: #fff;
+}
+.box-company-org .nav li.active a:before,
+.box-company-org .nav li.active a:hover:before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  margin-left: -3px;
+  left: 50%;
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-top-color: #50a1ff;
+}
+.box-company-org .nav li:last-child {
+  border: 0;
+}
+.box-company-org .nav li a {
+  color: #8597A8;
+  padding: 6px 15px;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 2px;
+  background: #F9F9F9;
+  border: 1px solid #DEE1E3;
+}
+.box-company-org .section-box {
+  background: #F7F8F9;
+  padding: 15px 20px;
+  border-bottom: 4px solid #CACED3;
+  position: relative;
+}
+.box-company-org .section-box .section-title {
+  color: #343E40;
+  font-weight: bold;
+  margin-top: 0;
+}
+.box-company-org .section-box .section-desc {
+  color: #6E7A86;
+}
+.box-company-org .section-box .section-quick-links {
+  font-weight: bold;
+  color: #6E7A86;
+  margin: 20px 0 10px;
+}
+.box-company-org .section-box .section-quick-links a {
+  margin: 0 4px;
+}
+.box-company-org .section-box:before {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  margin-left: -3px;
+  left: 50%;
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-top-color: #CACED3;
+}
+.department-list {
+  padding: 15px;
+}
+.department-list .department-heading {
+  font-weight: bold;
+  color: #757B80;
+}
+.department-list .panel-group {
+  margin: 0;
+}
+.department-list .panel-group .panel {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+.department-list .panel-group .panel .in + .panel-heading {
+  background: red;
+}
+.department-list .panel-group .panel .panel-heading {
+  background: none;
+  padding-left: 15px;
+  position: relative;
+}
+.department-list .panel-group .panel .panel-heading:before {
+  content: '\f0da';
+  position: absolute;
+  font-family: 'FontAwesome';
+  left: 0;
+  top: 6px;
+  font-size: 16px;
+  color: #C4C9CD;
+}
+.department-list .panel-group .panel .panel-heading .panel-title a {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.department-list .panel-group .panel .panel-collapse .list-group {
+  border: 0;
+}
+.department-list .panel-group .panel .panel-collapse .list-group .list-group-item {
+  border: 0;
+  padding: 5px 15px 5px 25px;
+  margin: 2px 0;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.department-list .panel-group .panel .panel-collapse .list-group .list-group-item.active {
+  background: #50a1ff;
+  border: 0;
+}
+.department-list .panel-group .panel .panel-collapse .list-group .list-group-item.inactive,
+.department-list .panel-group .panel .panel-collapse .list-group .list-group-item.inactive:hover {
+  background: none;
+  color: #B0B8C1;
+  cursor: default;
+}
+.section-detail .box-header {
+  background: #5C6774;
+  height: 50px;
+  border-radius: 3px 3px 0 0;
+}
+.section-detail .box-header:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  margin-top: -6px;
+  top: 50%;
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-right-color: #5C6774;
+}
+.section-detail .section-header {
+  padding: 20px;
+  text-align: center;
+}
+.section-detail .section-header .section-img {
+  width: 90px;
+  height: 90px;
+  background-color: #DFE7F1;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: -60px auto 10px;
+  position: relative;
+  border: 2px solid #fff;
+}
+.section-detail .section-header small {
+  display: block;
+}
+.section-detail .section-box {
+  border-top: 1px solid #DCE3E8;
+  padding: 10px 15px;
+}
+.section-detail .section-box .title {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+.section-detail .section-box .desc {
+  color: #6E7A86;
+  margin: 0;
+}
+.section-detail .section-box.users .user-avatar {
+  width: 30px;
+  height: 30px;
+  background-color: #E9EFF1;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 4px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .section-detail .box-header:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    margin-left: -6px;
+    left: 50%;
+    border: 6px solid transparent;
+    width: 0;
+    height: 0;
+    border-bottom-color: #5C6774;
+  }
+}
+@media (max-width: 768px) {
+  .company-menu .nav li {
+    border: 0;
+  }
+}

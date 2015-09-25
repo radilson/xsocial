@@ -8,15 +8,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta charset="UTF-8">
     <title>Rede CorpSUS</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Bootstrap 3.3.4 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-    <!-- Ionicons -->
-    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Theme style -->
     <link href="css/app-base.css" rel="stylesheet" type="text/css" />
-
+    <!-- BxSlider -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <![endif]-->
 </head>
 
-<body class="sidebar-mini">
+<body class="sidebar-mini fixed">
 
 <!-- Acesso Rapido -->
 <div class="fast-access">
@@ -56,33 +56,156 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
         <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
+        <div class="navbar navbar-static-top" role="navigation">
 
-            <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                <span class="sr-only">Toggle navigation</span>
-            </a>
+            <div class="bar-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
 
-            <!-- Logo -->
-            <a href="index.html" class="app-logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini">Corpsus</span>
-                <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg">Corpsus</span>
-            </a>
-
-            <!-- Navbar Right Menu -->
-            <div class="navbar-left">
+                <!-- Logo -->
+                <a href="index.html" class="app-logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">Corpsus</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img height="20px" src="img/logo.png"/></span>
+                </a>
 
 
+                <div class="navbar-left">
+                    <div class="topbar-utilities">
+
+                        <div class="dropdown message-box">
+                            <a href="#"  class="btn-message  dropdown-toggle" type="button" id="msgBox" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label">12</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="msgBox">
+                                <li class="header">Você tem <b>2</b> mensagens novas</li>
+                                <li>
+                                    <ul class="menu">
+                                        <!-- inner menu: Os dados de fato -->
+                                        <li class="new"><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li class="new"><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">Ver todas</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown notification-box">
+                            <a href="#"  class="btn-notification  dropdown-toggle" type="button" id="msgBox" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-globe"></i>
+                                <span class="label">3</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="msgBox">
+                                <li class="header">Você tem <b>4</b> novas mensagens</li>
+                                <li>
+                                    <ul class="menu">
+                                        <!-- inner menu: Os dados de fato -->
+                                        <li class="new"><!-- start message -->
+                                            <a href="#">
+                                                <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                                <h4>
+                                                    João da Silva
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>O que acha de começar a desenvolver o projeto antes da</p>
+                                            </a>
+                                        </li><!-- end message -->
+
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">Ver todas</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
             </div>
-        </nav>
 
-        <!-- Navbar Right Menu -->
-        <div class="navbar-right">
-
+            <div class="bar-bot">
+                <a href="#" class="btn btn-search" data-toggle="modal" data-target="#appSearch">
+                    <i class="fa fa-search"></i>
+                    <span class="msg-long">Digite em qualquer lugar para pesquisar…</span>
+                    <span class="msg-short">Pesquise na rede...</span>
+                </a>
+                <a href="#" class="chat-toggle">
+                    <i class="fa fa-comments"></i>
+                </a>
+                <div class="btn-user-profile btn-group pull-right">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-avatar" style="background-image: url(img/user8-128x128.jpg);"></div>
+                        <span class="user-name">Juliano Alves</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
+
+
+
+
 
 
     </header>
@@ -159,30 +282,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
         <!-- Barra de sistemas -->
-        <div class="app-bar"><!-- Adicionar classe 'edit-mode' para o modo de edição -->
+        <div class="app-bar edit-mode"><!-- Adicionar classe 'edit-mode' para o modo de edição -->
             <div class="app-bar-list">
 
-                <a href="#" target="_blank" class="btn btn-default btn-applink">
+                <a href="#" target="_blank" class="btn btn-applink">
                     <i class="app-favicon fav-color-a">G</i>Google
                     <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
                 </a>
-                <a href="#" target="_blank" class="btn btn-default btn-applink">
+                <a href="#" target="_blank" class="btn btn-applink">
                     <i class="app-favicon fav-color-b">G</i>Google
                     <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
                 </a>
-                <a href="#" target="_blank" class="btn btn-default btn-applink">
+                <a href="#" target="_blank" class="btn btn-applink">
                     <i class="app-favicon fav-color-c">G</i>Google
                     <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
                 </a>
-                <a href="#" target="_blank" class="btn btn-default btn-applink">
+                <a href="#" target="_blank" class="btn btn-applink">
                     <i class="app-favicon fav-color-d">G</i>Google
                     <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
                 </a>
-                <a href="#" target="_blank" class="btn btn-default btn-applink">
+                <a href="#" target="_blank" class="btn btn-applink">
                     <i class="app-favicon fav-color-e">G</i>Google
                     <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
                 </a>
-                <a href="#" target="_blank" class="btn btn-default btn-applink">
+                <a href="#" target="_blank" class="btn btn-applink">
                     <i class="app-favicon fav-color-f">G</i>Google
                     <div class="btn btn-xs btn-remove"><i class="fa fa-remove"></i></div>
                 </a>
@@ -190,7 +313,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
 
             <div class="btn-group app-bar-options">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-cog"></i>
                 </button>
                 <ul class="dropdown-menu pull-right">
@@ -207,91 +330,165 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="ministerio.html" class="tab-item active">O Ministério</a>
         </div>
 
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                Page Header
-                <small>Optional description</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                <li class="active">Here</li>
-            </ol>
-        </section>
 
         <!-- Main content -->
         <section class="content">
 
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid company-menu company-menu-config"><!-- Retirar classe company-menu-config quando não tiver permissão para configurar-->
+                            <div class="box-body">
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a href="#">Biblioteca</a></li>
+                                    <li class=""><a href="#">Boletins Internos</a></li>
+                                    <li class=""><a href="#">Serviços</a></li>
+                                    <li class=""><a href="#">Serviços</a></li>
+                                    <li><a href="#">Serviços</a></li>
+                                </ul>
+                                <button class="btn btn-default btn-menu-config"><i class="fa fa-cog"></i> </button>
+                            </div><!-- /.box-body -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-8">
-
-                        <div class="box box-solid">
+                        <div class="box box-solid box-company-org box-menu-config"><!-- Retirar classe box-menu-config quando não tiver permissão para configurar-->
                             <div class="box-header with-border">
-                                <h3 class="box-title">DESTAQUES</h3>
-                            </div>
-                            <div class="box-body">
-                                Conteudo
+                                <ul class="nav nav-pills section-list">
+                                    <li class="active"><a href="#">Minha Unidade</a></li>
+                                    <li class=""><a href="#">SE</a></li>
+                                    <li class=""><a href="#">SAS</a></li>
+                                    <li class=""><a href="#">SVS</a></li>
+                                    <li><a href="#">SGTES</a></li>
+                                    <li><a href="#">SGEP</a></li>
+                                </ul>
+                                <button class="btn btn-default btn-menu-config"><i class="fa fa-cog"></i> </button>
+                            </div><!-- /.box-header -->
+                            <div class="section-box">
+                                <h4 class="section-title">SAS · Secretaria de Atenção à Saúde</h4>
+                                <p class="section-desc">
+                                    A Secretaria de Atenção à Saúde (SAS) tem como uma de suas principais ações participar da formulação e implementação das políticas de atenção básica e especializada no país, observando os princípios do Sistema Único de Saúde (SUS).
+                                </p>
+                                <div class="section-quick-links">
+                                    <a href="#">Contatos</a> · <a href="#">Contatos</a> · <a href="#">Contatos</a> · <a href="#">Contatos</a>
+                                </div>
+                            </div><!-- /.box-body -->
+                            <div class="panel-group department-list" role="tablist">
+                                <h5 class="department-heading">DEPARTAMENTOS</h5>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Departamento de Atenção Especializada e Temática - DAET
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">Coordenação de Articulação e Suporte Técnico</a>
+                                                <a href="#" class="list-group-item active">Coordenação de Saúde da Pessoa Idosa</a>
+                                                <a href="#" class="list-group-item">Coordenação-Geral de Média e Alta complexidade </a>
+                                                <a href="#" class="list-group-item inactive">Coordenação-Geral de Atenção às Pessoas com Doenças Crônicas</a>
+                                                <a href="#" class="list-group-item inactive">Coordenação-Geral de Saúde Mental, Álcool e outras Drogas</a>
+                                                <a href="#" class="list-group-item">Coordenação de Atenção à Saúde do Homem</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Departamento de Ações Programáticas Estratégicas - DAPES
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">Coordenação de Articulação e Suporte Técnico</a>
+                                                <a href="#" class="list-group-item active">Coordenação de Saúde da Pessoa Idosa</a>
+                                                <a href="#" class="list-group-item">Coordenação-Geral de Média e Alta complexidade </a>
+                                                <a href="#" class="list-group-item inactive">Coordenação-Geral de Atenção às Pessoas com Doenças Crônicas</a>
+                                                <a href="#" class="list-group-item inactive">Coordenação-Geral de Saúde Mental, Álcool e outras Drogas</a>
+                                                <a href="#" class="list-group-item">Coordenação de Atenção à Saúde do Homem</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Departamento de Certificação de Entidades Beneficentes de Assistência Social em Saúde - DCEBAS
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">Coordenação de Articulação e Suporte Técnico</a>
+                                                <a href="#" class="list-group-item active">Coordenação de Saúde da Pessoa Idosa</a>
+                                                <a href="#" class="list-group-item">Coordenação-Geral de Média e Alta complexidade </a>
+                                                <a href="#" class="list-group-item inactive">Coordenação-Geral de Atenção às Pessoas com Doenças Crônicas</a>
+                                                <a href="#" class="list-group-item inactive">Coordenação-Geral de Saúde Mental, Álcool e outras Drogas</a>
+                                                <a href="#" class="list-group-item">Coordenação de Atenção à Saúde do Homem</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="box box-solid">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Atividades</h3>
-                            </div>
-                            <div class="box-body">
-                                Conteudo
-                            </div>
-                        </div>
-
                     </div>
                     <div class="col-md-4">
-
-                        <div class="box box-solid">
+                        <div class="box box-solid section-detail">
                             <div class="box-header with-border">
-                                <h3 class="box-title">ALERTAS</h3>
+                            </div><!-- /.box-header -->
+                            <div class="section-header">
+                                <div class="section-img" style="background-image: url(img/photo2.png);"></div>
+                                <b class="section-title">Coordenação de Saúde da Pessoa Idosa</b>
+                                <small>Gestor · <a href="#">João da Silva</a> </small>
                             </div>
-                            <div class="box-body">
-                                Conteudo
+                            <div class="section-box">
+                                <span class="title">ATRIBUIÇÕES</span>
+                                <p class="desc">A Coordenação de Saúde da Pessoa Idosa - COSAPI/DAET/SAS é responsável pela implementação da Politica Nacional de Saúde da Pessoa Idosa que tem como principais diretrizes: envelhecimento ativo e saudável, ate…</p>
                             </div>
-                        </div>
+                            <div class="section-box users clearfix">
+                                <span class="title">MEMBROS</span>
+                                <div class="user-avatar" data-toggle="tooltip" data-placement="bottom" title="João da Silva" style="background-image: url(img/user1-128x128.jpg);"></div>
+                                <div class="user-avatar" data-toggle="tooltip" data-placement="bottom" title="João da Silva" style="background-image: url(img/user6-128x128.jpg);"></div>
+                                <div class="user-avatar" data-toggle="tooltip" data-placement="bottom" title="João da Silva" style="background-image: url(img/user3-128x128.jpg);"></div>
+                                <div class="user-avatar" data-toggle="tooltip" data-placement="bottom" title="João da Silva" style="background-image: url(img/user4-128x128.jpg);"></div>
+                                <div class="user-avatar" data-toggle="tooltip" data-placement="bottom" title="João da Silva" style="background-image: url(img/user5-128x128.jpg);"></div>
+                                <div class="user-avatar" data-toggle="tooltip" data-placement="bottom" title="Ver todos" style="">+9</div>
+                            </div>
+                            <div class="section-box">
+                                <span class="title">SERVIÇOS</span>
+                                <ul>
+                                    <li><a href="#">Nome do serviço</a></li>
+                                    <li><a href="#">Nome do serviço</a></li>
+                                    <li><a href="#">Nome do serviço</a></li>
+                                </ul>
+                            </div>
+                            <div class="section-box">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary btn-sm">Acessar setor</button>
+                                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Ação 1</a></li>
+                                        <li><a href="#">Ação 1</a></li>
+                                        <li><a href="#">Ação 1</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Ação 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div class="box box-solid">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Serviços Rápidos</h3>
-                            </div>
-                            <div class="box-body">
-                                Conteudo
-                            </div>
                         </div>
-
-                        <div class="box box-solid">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Usuários Online</h3>
-                            </div>
-                            <div class="box-body">
-                                Conteudo
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </section><!-- /.content -->
@@ -304,7 +501,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             Anything you want
         </div>
         <!-- Default to the left -->
-
+        <a href="http://portalsaude.saude.gov.br/">http://portalsaude.saude.gov.br/</a>
     </footer>
 
 </div><!-- ./wrapper -->
@@ -349,6 +546,79 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
 </div>
 
+<!-- Modal BUSCA-->
+<div class="modal fade modal-search" id="appSearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <i class="fa fa-search"></i>
+                <input type="email" class="form-control search-field" placeholder="Pesquise na rede...">
+
+            </div>
+            <div class="modal-body">
+
+                <div class="search-results-wrapper">
+
+                    <div class="col-sm-6 col-search">
+                        <div class="search-list">
+                            <ul class="list-group">
+                                <!--Arquivos-->
+                                <li class="list-divider"><a href="#">Arquivos</a> <span class="label label-default">2</span></li>
+                                <li class="list-group-item type-drive">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <li class="list-group-item type-drive">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <!--Noticias-->
+                                <li class="list-divider"><a href="#">Notícias</a> <span class="label label-default">2</span></li>
+                                <li class="list-group-item type-news">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <li class="list-group-item type-news">
+                                    <div class="search-item-img"></div>
+                                    <div class="search-item-title">Protocolo Clínico e Diretrizes Terapêuticas.doc</div>
+                                    <div class="search-item-desc">Criado por Leandro Alves · 213KB</div>
+                                </li>
+                                <!--Usuarios-->
+                                <li class="list-divider"><a href="#">Usuários</a> <span class="label label-default">2</span></li>
+                                <li class="list-group-item type-user">
+                                    <div class="search-item-img" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                    <div class="search-item-title">Pedro Sousa</div>
+                                    <div class="search-item-desc">pedro@saude.gov.br<br>Ramal · 314</div>
+                                </li>
+                                <li class="list-group-item type-user">
+                                    <div class="search-item-img" style="background-image: url(img/user8-128x128.jpg);"></div>
+                                    <div class="search-item-title">Pedro Sousa</div>
+                                    <div class="search-item-desc">pedro@saude.gov.br<br>Ramal · 314</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-search">
+                        <div class="search-preview">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="searching-loader"><i class="fa fa-spin fa-spinner"></i></div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -363,6 +633,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- jQuery 2.1.4 -->
 <script src="js/jquery.min.js" type="text/javascript"></script>
+<!--Easing -->
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<!--BxSlider -->
+<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
 <!-- Classie -->
 <script src="js/classie.js" type="text/javascript"></script>
 <!-- Bootstrap 3.3.2 JS -->
