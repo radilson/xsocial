@@ -38,6 +38,7 @@
   top: auto;
   float: left;
   position: relative;
+  z-index: 1;
 }
 .box-informative .informative-carousel .bx-controls-direction .bx-prev:hover:before,
 .box-informative .informative-carousel .bx-controls-direction .bx-next:hover:before {
