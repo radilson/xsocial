@@ -516,6 +516,45 @@
 .chat-toggle:focus {
   color: #fff;
 }
+.help-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.help-menu ul li a {
+  clear: both;
+  color: #333;
+  display: block;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.help-menu ul li a .fa {
+  color: #859298;
+  width: 15px;
+  text-align: center;
+  margin-right: 5px;
+}
+.help-menu ul li a:hover {
+  background: #E1E4EA;
+  border-radius: 4px;
+}
+.help-toggle {
+  background-color: transparent;
+  background-image: none;
+  line-height: 50px;
+  padding: 0 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  float: right;
+  font-size: 24px;
+}
+.help-toggle:hover,
+.help-toggle:focus {
+  color: #fff;
+}
 .bar-top {
   float: left;
 }
@@ -563,6 +602,9 @@
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .help-toggle {
+    display: none;
   }
   .btn-user-profile.open .btn {
     background: rgba(0, 0, 0, 0.1);

@@ -1,7 +1,16 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider();
   $('.informativo').bxSlider();
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+  $('.help-toggle').popover({
+    html : true,
+    content: '<div class="help-menu">' +
+              '<ul>' +
+                '<li><a href="#"><i class="fa fa-question"></i> Perguntas Frequentes</a> </li> ' +
+                '<li><a href="#"> <i class="fa fa-frown-o"></i> Reportar Erro ou Dúvida </a> </li> ' +
+              '</ul> </div>'
+  });
 });
 
 /*! AdminLTE app.js
