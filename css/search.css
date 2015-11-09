@@ -37,7 +37,7 @@
   right: 20px;
 }
 .modal-search .modal-body {
-  min-height: 300px;
+  min-height: 340px;
   padding: 0;
 }
 .modal-search .searching-loader {
@@ -50,14 +50,91 @@
 .search-results-wrapper .col-search {
   margin: 0;
   padding: 0;
+  background: #CDD0D6;
 }
 .search-results-wrapper .search-preview {
-  background: #F2F2F2;
-  min-height: 300px;
-  border-left: 1px solid #D8DADC;
+  min-height: 320px;
+}
+.search-results-wrapper .search-preview .preview-box {
+  margin: 10px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.search-results-wrapper .search-preview.preview-type-user .preview-header {
+  padding: 15px 15px 15px 80px;
+}
+.search-results-wrapper .search-preview.preview-type-user .preview-header .preview-img {
+  width: 60px;
+  height: 60px;
+  background-color: #E9EFF1;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  border: 2px solid #fff;
+}
+.search-results-wrapper .search-preview .preview-actions {
+  padding: 10px;
+  border-top: 1px solid #D2D6DA;
+}
+.search-results-wrapper .search-preview .preview-info {
+  max-height: 248px;
+  overflow: auto;
+  border-radius: 0 0 4px 4px;
+}
+.search-results-wrapper .search-preview .preview-info .preview-table .table {
+  margin: 0;
+}
+.search-results-wrapper .search-preview .preview-info .preview-table .table > tbody > tr > td {
+  border-top: 1px solid #D2D6DA;
+  background: #F7F7F7;
+}
+.search-results-wrapper .search-preview .preview-info .preview-table .table > tbody > tr > td:first-child {
+  text-align: right;
+  color: #9499A5;
+  white-space: nowrap;
+  width: 30px;
+}
+.search-results-wrapper .search-preview .preview-header {
+  padding: 15px;
+  min-height: 72px;
+  position: relative;
+}
+.search-results-wrapper .search-preview .preview-header:after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  margin-top: -6px;
+  top: 50%;
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-right-color: #fff;
+}
+.search-results-wrapper .search-preview .preview-header .preview-desc .preview-title {
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #364658;
+}
+.search-results-wrapper .search-preview .preview-header .preview-desc .preview-subtitle {
+  font-size: 14px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .search-results-wrapper .search-list {
-  max-height: 300px;
+  max-height: 340px;
   overflow-y: auto;
 }
 .search-results-wrapper .search-list .list-group {
@@ -73,6 +150,30 @@
   overflow: hidden;
   line-height: 16px;
   min-height: 52px;
+}
+.search-results-wrapper .search-list .list-group .list-group-item .wrap {
+  white-space: normal;
+}
+.search-results-wrapper .search-list .list-group .list-group-item.type-media .search-item-img,
+.search-results-wrapper .search-list .list-group .list-group-item.type-article .search-item-img {
+  border-radius: 3px;
+}
+.search-results-wrapper .search-list .list-group .list-group-item.type-media .search-item-img .img-preview,
+.search-results-wrapper .search-list .list-group .list-group-item.type-article .search-item-img .img-preview {
+  width: 30px;
+  height: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+.search-results-wrapper .search-list .list-group .list-group-item.type-media .search-item-img:before,
+.search-results-wrapper .search-list .list-group .list-group-item.type-article .search-item-img:before {
+  border-radius: 3px;
 }
 .search-results-wrapper .search-list .list-group .list-group-item:last-child {
   -webkit-border-radius: 0;
@@ -121,6 +222,9 @@
   font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.search-results-wrapper .search-list .list-group .list-group-item .search-item-title .fa-star {
+  color: #F5DD14;
 }
 .search-results-wrapper .search-list .list-group .list-group-item .search-item-desc {
   font-size: 12px;

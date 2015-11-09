@@ -21,6 +21,8 @@
 @type-workspace: #AD78E4;
 @type-forum: #7ED321;
 @type-drive: #4A90E2;
+@type-article: #C5CCD6;
+@type-faq: #5BCCAF;
 
 .main-header .navbar {
   background-color: @topbar-bg;
@@ -186,31 +188,31 @@
 .search-results-wrapper .search-list .list-group .list-group-item {
  &.type-drive .search-item-img:before{
   background-color: @type-drive;
-  content: '\f0a0'; /* fa-hdd */
+  //content: '\f0a0'; /* fa-hdd */
  }
  &.type-news .search-item-img:before{
   background-color: @type-news;
   content: '\f0a1'; /* fa-bullhorn */
  }
  &.type-forum .search-item-img:before{
-  background-color: @type-drive;
+  background-color: @type-forum;
   content: '\f10d'; /* fa-quote-left */
  }
- &.type-drive .search-item-img:before{
-  background-color: @type-drive;
-  content: '\f0a0';
+ &.type-workspace .search-item-img:before{
+  background-color: @type-workspace;
+  content: '\f0b1';
  }
- &.type-drive .search-item-img:before{
-  background-color: @type-drive;
-  content: '\f0a0';
+ &.type-media .search-item-img:before{
+  background-color: @type-image;
+  content: '\f1c5';
  }
- &.type-drive .search-item-img:before{
-  background-color: @type-drive;
-  content: '\f0a0';
+ &.type-article .search-item-img:before{
+  background-color: @type-article;
+  content: '\f15c';
  }
- &.type-drive .search-item-img:before{
-  background-color: @type-drive;
-  content: '\f0a0';
+ &.type-faq .search-item-img:before{
+  background-color: @type-faq;
+  content: '\f128';
  }
 }
 

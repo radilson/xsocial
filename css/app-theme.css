@@ -157,8 +157,6 @@
 }
 .search-results-wrapper .search-list .list-group .list-group-item.type-drive .search-item-img:before {
   background-color: #4a90e2;
-  content: '\f0a0';
-  /* fa-hdd */
 }
 .search-results-wrapper .search-list .list-group .list-group-item.type-news .search-item-img:before {
   background-color: #f26a1d;
@@ -166,25 +164,25 @@
   /* fa-bullhorn */
 }
 .search-results-wrapper .search-list .list-group .list-group-item.type-forum .search-item-img:before {
-  background-color: #4a90e2;
+  background-color: #7ed321;
   content: '\f10d';
   /* fa-quote-left */
 }
-.search-results-wrapper .search-list .list-group .list-group-item.type-drive .search-item-img:before {
-  background-color: #4a90e2;
-  content: '\f0a0';
+.search-results-wrapper .search-list .list-group .list-group-item.type-workspace .search-item-img:before {
+  background-color: #ad78e4;
+  content: '\f0b1';
 }
-.search-results-wrapper .search-list .list-group .list-group-item.type-drive .search-item-img:before {
-  background-color: #4a90e2;
-  content: '\f0a0';
+.search-results-wrapper .search-list .list-group .list-group-item.type-media .search-item-img:before {
+  background-color: #ff72d6;
+  content: '\f1c5';
 }
-.search-results-wrapper .search-list .list-group .list-group-item.type-drive .search-item-img:before {
-  background-color: #4a90e2;
-  content: '\f0a0';
+.search-results-wrapper .search-list .list-group .list-group-item.type-article .search-item-img:before {
+  background-color: #c5ccd6;
+  content: '\f15c';
 }
-.search-results-wrapper .search-list .list-group .list-group-item.type-drive .search-item-img:before {
-  background-color: #4a90e2;
-  content: '\f0a0';
+.search-results-wrapper .search-list .list-group .list-group-item.type-faq .search-item-img:before {
+  background-color: #5bccaf;
+  content: '\f128';
 }
 /* Btn app */
 .sr-app-list-wrapper .btn-app {
