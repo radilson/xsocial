@@ -55,6 +55,18 @@
 .search-results-wrapper .search-preview {
   min-height: 320px;
 }
+.search-results-wrapper .search-preview .user-avatar {
+  width: 25px;
+  height: 25px;
+  background-color: #E9EFF1;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  margin-bottom: -7px;
+}
 .search-results-wrapper .search-preview .preview-box {
   margin: 10px;
   background: #fff;
@@ -97,6 +109,16 @@
 }
 .search-results-wrapper .search-preview.preview-type-drive .preview-header .preview-img {
   background: #4a90e2;
+}
+.search-results-wrapper .search-preview.preview-type-faq .preview-header .preview-desc .preview-title {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: normal;
+}
+.search-results-wrapper .search-preview.preview-type-faq .preview-header .preview-desc .preview-subtitle {
+  font-size: 12px;
+  display: block;
+  white-space: normal;
 }
 .search-results-wrapper .search-preview .preview-actions {
   padding: 10px;
