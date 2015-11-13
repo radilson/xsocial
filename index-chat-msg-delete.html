@@ -245,10 +245,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <li><a href="#">Adicionar participante </a> </li>
                         <li><a href="#">Excluir mensagem </a> </li>
                         <li><a href="#">Sair da conversa </a> </li>
+                    </ul>
                 </div>
             </div>
+            <div class="chat-edit-tools">
+                <button type="button" class="btn btn-default btn-sm">
+                    <i class="fa fa-trash"></i> (3)
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    Limpar tudo
+                </button>
+                <button type="button" class="btn btn-default btn-sm pull-right">
+                    Cancelar
+                </button>
+            </div>
             <div class="chat-conversation-box">
-                <div class="chat-conversation"><!--Faze tratamento nessa div pra pegar altura fixa de acordo com o monitor (O chat atual já tem isso Chat-scroll-native)-->
+                <div class="chat-conversation delete-state"><!--Faze tratamento nessa div pra pegar altura fixa de acordo com o monitor (O chat atual já tem isso Chat-scroll-native)-->
                     <div class="chat-event chat-event-type-date">
                         <div class="chat-event-header">12 de Novembro de 2015</div>
                     </div>
@@ -256,13 +268,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!--Sequencia 3+ conversas-->
                     <div class="chat-event chat-event-type-message chat-event-sequence-first">
                         <div class="chat-event-header">
-                            <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
-                        <div class="hat-message-select">
-                            <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                <i class="fa fa-check"></i>
-                            </button>
+                            <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time>
                         </div>
+
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Lorem ipsum dolor sit amet, sed eget accums.
                             </div>
@@ -270,8 +284,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                     <div class="chat-event chat-event-type-message chat-event-sequence-middle">
                         <div class="chat-event-header">
-                            <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
+                            <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time>
+                        </div>
+
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Sed eget accums timing undertaken.
                             </div>
@@ -279,8 +300,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                     <div class="chat-event chat-event-type-message chat-event-sequence-last">
                         <div class="chat-event-header">
-                            <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
+                            <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time>
+                        </div>
+
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Sed eget accums?
                             </div>
@@ -291,6 +319,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Lorem ipsum dolor sit amet, sed eget accums.
                             </div>
@@ -300,6 +333,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Sed eget accums?
                             </div>
@@ -310,6 +348,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Sed eget accums?
                             </div>
@@ -323,6 +366,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes de Sousa Melo Castro</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Lorem ipsum dolor sit amet, sed eget accums.
                             </div>
@@ -332,6 +380,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Testendo hat
                             </div>
@@ -341,6 +394,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-media image" style="background-image: url(img/photo1.png);"></div>
                         </div>
                     </div>
@@ -348,6 +406,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="chat-event-header">
                             <span class="user-name">Fernando Antunes de Sousa Melo</span><time class="pull-right">14h56</time></div>
                         <div class="chat-event-body">
+                            <div class="chat-message-select">
+                                <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="fa fa-check"></i>
+                                </button>
+                            </div>
                             <div class="chat-message">
                                 Sed eget accums?
                             </div>
