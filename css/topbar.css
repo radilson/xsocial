@@ -512,6 +512,21 @@
   float: right;
   font-size: 24px;
 }
+.chat-toggle .badge {
+  position: absolute;
+  color: #fff;
+  background: #50A1FF;
+  font-size: 10px;
+  padding: 0 5px;
+  height: 15px;
+  line-height: 14px;
+  font-family: 'latoblack';
+  border-radius: 24px;
+  right: 12px;
+  top: 10px;
+  text-indent: -1px;
+  font-weight: 700;
+}
 .chat-toggle:hover,
 .chat-toggle:focus {
   color: #fff;

@@ -1067,6 +1067,21 @@ a:focus {
   float: right;
   font-size: 24px;
 }
+.chat-toggle .badge {
+  position: absolute;
+  color: #fff;
+  background: #50A1FF;
+  font-size: 10px;
+  padding: 0 5px;
+  height: 15px;
+  line-height: 14px;
+  font-family: 'latoblack';
+  border-radius: 24px;
+  right: 12px;
+  top: 10px;
+  text-indent: -1px;
+  font-weight: 700;
+}
 .chat-toggle:hover,
 .chat-toggle:focus {
   color: #fff;
@@ -4680,12 +4695,12 @@ table.text-center th {
   font-size: 9px;
   padding: 0 4px;
   line-height: 14px;
-  background-color: rgba(255, 52, 83, 0.89);
+  background-color: rgba(45, 190, 255, 0.89);
   z-index: 1;
   border-radius: 18px;
   height: 14px;
   min-width: 14px;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.31);
 }
 .chat-sidewrapper .chat-list ul li.active .user-avatar {
   border: 1px solid #1FAACC;
